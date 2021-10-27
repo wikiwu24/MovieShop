@@ -1,0 +1,12 @@
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\bin\Debug\net5.0\ApplicationCore.deps.json
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\bin\Debug\net5.0\ApplicationCore.dll
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\bin\Debug\net5.0\ref\ApplicationCore.dll
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\bin\Debug\net5.0\ApplicationCore.pdb
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.AssemblyInfo.cs
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.dll
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ref\ApplicationCore.dll
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.pdb
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.csproj.AssemblyReference.cache
