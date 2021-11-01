@@ -14,6 +14,8 @@ using ApplicationCore.Repositoryinterfaces;
 using Infrastructure.Repositories;
 using ApplicationCore.Serviceinterfaces;
 using Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using MovieShopMVC.Services;
 
 namespace MovieShopMVC
 {
@@ -34,10 +36,23 @@ namespace MovieShopMVC
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+            services.AddHttpContextAccessor();
+
             // inject connection string from appsetting.json to MovieshopContext
             services.AddDbContext<MovieShopDbContext>(
 
                 options => options.UseSqlServer(Configuration.GetConnectionString("MovieShopDbConnection")));
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.Cookie.Name = "MovieShopAuthCookie";
+                    // Expire in 2hours after creation
+                    options.ExpireTimeSpan = TimeSpan.FromHours(2);
+                    // the page you go to after the cookie expired
+                    options.LoginPath = "/acount/login";
+
+                });
 
         }
 
@@ -58,7 +73,7 @@ namespace MovieShopMVC
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

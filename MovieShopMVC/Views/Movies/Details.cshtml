@@ -1,6 +1,11 @@
 ﻿@model ApplicationCore.Models.MovieDetailResponseModel
 
 <div>
-   @Model.Title
+    
+         
+    <partial name="_MovieCast" model="@Model.Casts" />
+
+    
+    
     
 </div>

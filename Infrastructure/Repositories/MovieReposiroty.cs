@@ -10,13 +10,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
-    public class MovieReposiroty : IMovieRepository
+    public class MovieReposiroty : EfRepository<Movie>, IMovieRepository
     {
-        public MovieShopDbContext _dbContext;
+       
 
-        public MovieReposiroty(MovieShopDbContext dbContext)
+        public MovieReposiroty(MovieShopDbContext dbContext):base(dbContext)
         {
-            _dbContext = dbContext;
+            
         }
 
         public Task<Movie> GetMovieById(int id)

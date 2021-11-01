@@ -154,3 +154,5 @@ C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\obj\Deb
 C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\obj\Debug\net5.0\Razor\Views\Movies\_MovieCast.cshtml.g.cs
+C:\Users\wuke9\OneDrive\DeskTop\Training\Projects\MovieShop\MovieShopMVC\obj\Debug\net5.0\Razor\Views\Shared\_LoginInforPartial.cshtml.g.cs
