@@ -10,22 +10,16 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : EfRepository<User>,IUserRepository
     {
-        public MovieShopDbContext _dbContext;
+        
 
-        public UserRepository(MovieShopDbContext dbContext)
+        public UserRepository(MovieShopDbContext dbContext):base(dbContext)
         {
-            _dbContext = dbContext;
+            
         }
 
-        public async Task<User> AddUser(User user)
-        {
-            await _dbContext.Users.AddAsync(user);
-            // we need to commit the changes to the database
-            await _dbContext.SaveChangesAsync();
-            return user;
-        }
+        
 
         public async Task<User> GetUserByEmail(string email)
         {

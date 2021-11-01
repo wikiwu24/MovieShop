@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using MovieShopMVC.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +10,27 @@ namespace MovieShopMVC.Controllers
 {
     public class UserController : Controller
     {
+        private readonly ICurrentUserService _currentUserService;
+        public UserController(ICurrentUserService currentUserService)
+        {
+            _currentUserService = currentUserService;
+
+        }
+
+
         // all the action methods in User Controller should work only when user is Authenticated (login success)
         
-            [HttpPost]
-            public async Task<IActionResult> Purchase()
-            {
+        [HttpPost]
+        [Authorize]
+            //Authorize filter check the users isAuthenticated
+            // this will not work if you remove the middleware registration
+        public async Task<IActionResult> Purchase()
+        {
+            var userId = _currentUserService.UserId;
+
                 // purchase a movie when user clicks on Buy button on Movie Details Page
                 return View();
-            }
+        }
 
             [HttpPost]
             public async Task<IActionResult> Favorite()

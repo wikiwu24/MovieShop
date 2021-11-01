@@ -7,7 +7,7 @@ using ApplicationCore.Entities;
 
 namespace ApplicationCore.Repositoryinterfaces
 {
-    public interface IMovieRepository
+    public interface IMovieRepository:IAsyncRepository<Movie>
     {
         // create methods mased on the business logic
 
